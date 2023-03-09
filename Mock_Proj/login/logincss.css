@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+h1{
+    color: yellow;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginform{
+    margin: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: lightslategray;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.loginform > div{
+    padding: 10px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.loginform > div > input{
+    padding: 10px;
+    height: 25px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.loginform > div > button{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: fit-content;
+    border: black;
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 20px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    
+}
+
+.popup > p {
+    padding: 10px;
+    margin: 10px;
+}
+
+.openpopup{
+    visibility: visible;
+}

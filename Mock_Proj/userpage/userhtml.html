@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portal</title>
+    <script type="text/javascript" src="../jquery/jquery.js"></script>
+    <script src="userjs.js"></script>
+    <link rel="stylesheet" href="usercss.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs"> 
+            <ul class="linklist" id="functions"> 
+                <button class="tablink" id="searchtraintab"> Search Trains </button> 
+                <button class="tablink" id="booktickettab"> Book Ticket</button>
+                <button class="tablink" id="viewticketstab"> View Tickets</button>
+            </ul>
+        </div>
+
+        <div class="tabcontent" id="searchtraincontent"> 
+            <div>   <span> WELCOME TO THE PORTAL</span></div>
+            <div class="grid1">
+                <div> <pre>Source      :  </pre> <select id="sourcelist"></select> </div>
+                <div> <pre>Destination :  </pre> <select id="destinationlist"></select> </div>
+                <div> <pre>Date        :  </pre> <input type="date" id="date_picker" min="2023-03-01" value="2023-03-01"></div>
+                <div> <button id="searchbutton"> Search </button></div>
+            </div>
+            <div class="grid2" id="resultarea" >
+                <span style="font-size: 30px;"> Your trips will appear here !!!</span>
+            </div>
+            
+        </div>
+
+        <div class="tabcontent" id="bookticketcontent">
+            <div><h1>PASSENGER CONTENT GOES HERE</h1></div>
+            <!-- <div class="grid3" id="selectpassengercontent">
+                
+            </div> -->
+            <div class="grid3" id="passengercontent">
+                <div class="grid5" id="passengercontent1">
+                    
+                </div>
+            </div>
+            <div class="grid4" id="summary">
+                
+            </div>
+        </div>
+        <div class="tabcontent" id="viewticketscontent">
+            <div style="padding: 20px;">   <span> Booked Tickets </span>   <span>Search by Ticket ID : </span>     <input type="number" id="ticketidsearch" ></div>
+            <div class="tickets" id="ticketcontent">
+
+            </div>
+        </div>
+    </div>
+    <div class="popup" id = "ppfail">
+        <span style="font-size: 100px;"> &#9785; </span>
+        <p id ="failresponse" style="font-size: 30px;"></p>
+        <button type="button" id="ppfailbutton" class="popupclosebutton"> OK</button>
+    </div>
+    <div class="addpass" id="putpassengerdetailspopup">
+        <div style="display: inline-flex; align-items: center;"><h1>Add a new passenger</h1> <button type="button" id="closepopup" onclick="toggleaddpasspopup()" style="size: 1cm;">x</button></div>
+        <div><hr></div>
+        <div class="popupdetails">   <pre>Name       :</pre>    <input type="text" id="putpassengername" onchange="clearwarning(this.id)"></div>
+        <div class="popupdetails">   <pre>Gender     :</pre>   <input type="radio" id="putpassengergendermale" name="getgender" checked><pre> Male   </pre> <input type="radio" id="getpassengergenderfemale" name="getgender"><pre> Female</pre></div>
+        <div class="popupdetails">   <pre>Age        :</pre>   <input type="number" id="putpassengerage" min="6" max="60" onchange="clearwarning(this.id)"></div>
+        <div>   <button type="button" id="putpassengerbutton" class="" onclick="postpassenger(this.value)">Add Passenger</button></div>
+    </div>    
+</body>
+</html>

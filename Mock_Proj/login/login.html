@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../jquery/jquery.js"></script>
+    <script type = "text/javascript" src="loginjs.js"> </script>
+    <title>Login</title>
+    <link rel="stylesheet" href="logincss.css" type="text/css">
+</head>
+<body>
+    <!-- <h1>hello</h1> -->
+    <div class="container">
+        <div class="loginform"> 
+            <div>   <span style="font-weight: bolder; font-size: 30px;"> LOGIN </span>    </div>
+            <div style="display: inline-flex; ">  <pre> Email    :</pre> <input type="text" name="loginemail" id="loginemail" placeholder="example@gmail.com" value="testuser@gmail.com">    </div>
+            <div style="display: inline-flex; ">  <pre> Password :</pre> <input type="password" name="loginpassword" id="loginpassword" placeholder="testuser" value="testuser">    </div>
+            <div> <button type="button" name="loginbutton" id="loginbutton" > LOGIN </button></div>
+            <div>   <h3> OR </h3>   </div>
+            <div> <button type="button" name="guestbutton" id="guestbutton" > SIGN IN AS GUEST </button></div>
+            <div>   <h3> OR </h3>   </div>
+            <div> <button type="button" name="registerbutton" id="registerbutton" > REGISTER AS NEW USER </button></div>
+        </div>
+        <div class="popup" id="ppfail">
+            <span style="font-size: 100px;"> &#9786;</span>
+            <p style="font-size: 30px;" id="response"></p>
+            <button type="button" id="ppfailbutton"> OK</button>
+        </div>
+        
+    </div>
+</body>
+</html>

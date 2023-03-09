@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flexbox; background-color: aqua; width: fit-content;">
+        <div style="display: flex; flex-direction: row; background-color: blue; justify-content: flex-end;">
+            <span>Source Station</span>
+            <div>
+                <span> Departure Time</span>
+                <input type="datetime-local">
+            </div>
+            <button>Remove station</button>
+        </div>
+        <div style="display: flex; flex-direction: column; background-color: yellow; align-items: center; justify-content: space-evenly;">
+            <div style="display: flex; flex-direction: row;">
+                <input type="datetime-local">
+                <span>Destination Station</span>
+                <input type="datetime-local">
+                <button>Remove station</button>    
+            </div>
+            
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+                <input type="datetime-local">
+                <span>Destination Station</span>
+                <input type="datetime-local">
+                <button>Remove station</button>    
+            </div>
+            
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+            <div style="display: flex; flex-direction: column; text-align: center;">
+                <span> Arrival Time</span>
+                <input type="datetime-local">
+            </div>
+            <span>Destination Station</span>
+        </div>
+    </div>
+</body>
+</html>

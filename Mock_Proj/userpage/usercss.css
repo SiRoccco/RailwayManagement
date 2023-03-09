@@ -1,0 +1,352 @@
+body{
+    width: 1000px;
+    margin: auto;
+    background-color: gray;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 10;
+}
+
+.tablink{
+    color: black;
+    background-color: white;
+    border: none;
+    float: left;
+    outline: none;
+    padding: 5px;
+    font-size: 25px;
+    width: 25%;
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+.tablink:hover{
+    background-color: grey;
+}
+
+.selected{
+    background-color: black;
+    color: white;
+}
+
+.linklist{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    margin-bottom: 0px;
+}
+
+.tabcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 10px solid black;   
+    margin-top: 0px;
+}
+
+.grid1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    width: fit-content;
+    padding: 5px;
+    
+}
+
+.grid1 > div{
+    display: inline-flex;
+    
+}
+
+.grid1 > div > pre{
+    font-size: 20px;
+
+}
+
+.grid1 > div > input , button , select  {
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+}
+
+
+.grid2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+th{
+    border: 2px solid white;
+    width: fit-content;
+    padding: 5px;
+}
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border: black;
+    border-radius: 5px;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    z-index: 100;
+    
+}
+
+.popup > p {
+    padding: 10px;
+    margin: 10px;
+}
+.openpopup{
+    visibility: visible;
+}
+
+.resultarea{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.result{
+    border: 2px solid black; border-radius: 10px; width: 600px; padding: 10px; margin-bottom: 20px;
+}
+
+.header{
+    display: flex; flex-direction: row;flex-wrap: wrap; justify-content: space-around; flex-basis: auto;
+}
+
+.info{
+    display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; flex-basis: auto;
+}
+
+.stations{
+    display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;
+}
+
+.stationinfo{
+    display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-evenly;
+}
+
+#searchtraincontent{
+    padding-bottom: 20px;
+}
+
+.bookingbutton{
+    height: 100px;
+    width: 100px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+.bookingbutton:hover{
+    height: 110px;
+    width: 110px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+}
+
+.hidecontent{
+    visibility: hidden;
+}
+
+
+.grid3{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.grid5{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+.passengercontent{
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+    padding: 5px;
+    width: fit-content;
+}
+
+.passengercontent1{
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+    padding: 5px;
+    width: fit-content;
+}
+
+.passinfo{
+    display: flex; 
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    width: max-content;
+}
+
+.passinfo > div > input , button{
+    height: 30px;
+    margin: 5px;
+}
+
+.passnameinput{
+    width: 200px;
+}
+
+.passgenderinput{
+    width: 100px;
+}
+
+.passageinput{
+    width: 50px;
+}
+
+#addanotherpassenger{
+    width: fit-content;
+    background-color: lightskyblue;
+    border: none;
+    height: 30px;
+}
+
+#addanotherpassenger:hover{
+    width: fit-content;
+    background-color: lightblue;
+    border: none;
+}
+
+.removepassbutton{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.utilitybutton{
+    width: max-content;
+    background-color: lightskyblue;
+    border: none;
+    height: 30px;
+}
+
+
+.utilitybutton:hover{
+    width: fit-content;
+    background-color: lightblue;
+    border: none;
+}
+
+.summary{
+    display: flex;flex-direction: column; width: fit-content; border: 2px solid black; padding: 10px;
+}
+
+.passengersummary{
+    display: flex; flex-direction: column;
+
+}
+
+.singlepass{
+    display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between ; width: 500px;
+}
+
+.genderdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.warning{
+    border: 2px solid red;
+}
+
+.popupdetails{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.addpass{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background-color: lightgray;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    z-index: 99;
+}
+
+#putpassengername{
+    height: 40px;
+    width: 200px;
+}
+#putpassengerage{
+    height: 40px;
+    width: 60px;
+}
+
+.popupclosebutton{
+    height: fit-content;
+    width: fit-content;
+}
+
+#closepopup{
+    height: 1cm;
+    width: 1cm;
+}
+
+.ticket{
+    border: 3px solid lightblue;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.ticket > div > hr {
+    color: blue;
+    border-radius: 5px;
+}

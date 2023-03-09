@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <script src="../jquery/jquery.js"></script>
+    <script src="adminjs.js"></script>
+    <link rel="stylesheet" href="admincss.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="tabs" id="navbuttons">
+            <ul class="linklist" id="entities">
+                <button class="tablink" id="stationbutton" value="stationcontent"> Stations</button>
+                <button class="tablink" id="trainbutton" value="traincontent"> Trains</button>
+                <button class="tablink" id="tripbutton" value="tripcontent"> Trips</button>
+            </ul>
+            <div class="container">
+                <div class="contentlevel1" id="stationcontent">
+                    <ul class="linklist" id="stationfunctions">
+                        <button class="tablink" id="addstationbutton" value="addstation">Add Station</button>
+                        <button class="tablink" id="removestationbutton" value="removestation"> Remove Station</button>
+                    </ul>
+                    <div class="contentlevel2" id="addstation">
+                        <h1>Add Station Content</h1>
+                    </div>
+                    <div class="contentlevel2" id="removestation">
+                        <h1>Remove Station Content</h1>
+                    </div>
+                </div>
+
+                <div class="contentlevel1" id="traincontent">
+                    <ul class="linklist" id="trainfunctions">
+                        <button class="tablink" id="addtrainbutton" value="addtrain">Add Train</button>
+                        <button class="tablink" id="removetrainbutton" value="removetrain"> Remove Train</button>
+                    </ul>
+                    <div class="contentlevel2" id="addtrain">
+                        <h1>Add Train Content</h1>
+                    </div>
+                    <div class="contentlevel2" id="removetrain">
+                        <h1>Remove Train Content</h1>
+                    </div>
+                </div>
+                <div class="contentlevel1" id="tripcontent">
+                    <ul class="linklist" id="trainfunctions">
+                        <button class="tablink" id="addtripbutton" value="addtrip">Add Train</button>
+                        <button class="tablink" id="removetripbutton" value="removetrip"> Remove Train</button>
+                    </ul>
+                    <div class="contentlevel2" id="addtrip">
+                        <div id="assigntrain">
+                            
+                        </div>
+                        <div id="assigncostperkm">
+                            
+                        </div>
+                        <div class="firststation" id="srcstation">
+
+                        </div>
+                        <div class="stations" id="intermediatestations">
+
+                        </div>
+                        <div class="finalstation" id="deststation">
+
+                        </div>
+                        <div style="display: inline-flex;"> <button id="resettripbutton" onclick="resetaddtrip()">Reset</button> <button id="posttripbutton" onclick="posttrip()">Add Trip</button></div>
+                    </div>
+                    <div class="contentlevel2" id="removetrip">
+                        <h1>Remove Trip Content</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id = "ppfail">
+        <span style="font-size: 100px;"> &#9785; </span>
+        <p id ="failresponse" style="font-size: 30px;"></p>
+        <button type="button" id="ppfailbutton" class="popupclosebutton"> OK</button>
+    </div>
+
+    <div class="popup" id = "ppsuccess">
+        <span style="font-size: 100px;"> &#9786; </span>
+        <p id ="successresponse" style="font-size: 30px;"></p>
+        <button type="button" id="ppsuccessbutton" class="popupclosebutton"> OK</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Portal</title>
+    <script src="../jquery/jquery.js"></script>
+    <script src="registerjs.js"></script>
+    <link type="text/css" rel="stylesheet" href="registercss.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="registerform">
+            <div>   <h3> Register as new user </h3>     </div>
+            <div style="display: inline-flex;"> <pre> Enter a Username    : </pre> <input type="text" name ="registerusername" id="registerusername">  </div>
+            <div style="display: inline-flex;"> <pre> Enter a Email       : </pre> <input type="text" name ="registeremail" id="registeremail">  </div>
+            <div style="display: inline-flex;"> <pre> Enter a Password    : </pre> <input type="password" name ="registerpassword" id="registerpassword"></div>
+            <div> <button type="button" id="registerbutton"> REGISTER</button></div>
+            <!-- <div> <button type="button" id="testbutton"> testpopup</button></div> -->
+        </div>
+
+        <div class="popup" id="ppsuccess">
+            <span style="font-size: 100px;"> &#9786;</span>
+            <p style="font-size: 30px;">You have registered as an user successfully</p>
+            <button type="button" id="ppsuccessbutton"> OK</button>
+        </div>
+
+        <div class="popup" id = "ppfail">
+            <span style="font-size: 100px;"> &#9785; </span>
+            <p id ="failresponse" style="font-size: 30px;"></p>
+            <button type="button" id="ppfailbutton"> OK</button>
+        </div>
+    </div>
+</body>
+</html>
